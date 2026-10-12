@@ -1,10 +1,10 @@
 # stacli-Opsli
 
-A repository for an operations-oriented CLI/tooling project. The source code is the authority for the supported commands, integrations, and runtime requirements.
+An operations-oriented CLI or tooling project. The source code is the authority for supported commands, integrations, and runtime requirements.
 
 ## Overview
 
-Good CLI tools make operational workflows repeatable and observable. This README provides a starting point for documenting installation, command examples, configuration, and troubleshooting as the implementation evolves.
+Good CLI tools make operational workflows repeatable and observable. This README is a starting point for documenting installation, command examples, configuration, and troubleshooting as the implementation evolves.
 
 ## Getting started
 
@@ -17,7 +17,7 @@ Check the project files for the correct runtime, dependency installation, and en
 
 ## CLI quality checklist
 
-- Include `--help` and clear usage examples
+- Provide `--help` and clear usage examples
 - Validate arguments and report actionable errors
 - Keep credentials out of shell history and source control
 - Provide structured logs and safe exit codes
