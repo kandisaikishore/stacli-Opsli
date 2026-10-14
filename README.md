@@ -1,50 +1,38 @@
 # stacli-Opsli
 
-## Live Demo / Deployment URL
+[![Source](https://img.shields.io/badge/Source-GitHub-181717?logo=github)](https://github.com/kandisaikishore/stacli-Opsli) [![Last Commit](https://img.shields.io/github/last-commit/kandisaikishore/stacli-Opsli)](https://github.com/kandisaikishore/stacli-Opsli/commits/main)
 
-**Deployment URL:** Not verified yet. Add the confirmed public application URL here after checking the live service. The repository's GitHub URL is the source code, not a deployed application.
+stacli-Opsli is an operations-oriented tooling project. Its goal is to provide a base for repeatable command-line workflows and developer/DevOps operations; check the source for the exact commands and integrations implemented.
 
+## Project goals
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/saikishore2410/stacli-Opsli) [![Issues](https://img.shields.io/github/issues/saikishore2410/stacli-Opsli)](https://github.com/saikishore2410/stacli-Opsli/issues) [![Last Commit](https://img.shields.io/github/last-commit/saikishore2410/stacli-Opsli)](https://github.com/saikishore2410/stacli-Opsli/commits/main)
-
-> An operations-oriented CLI or tooling project. The source code is the authority for supported commands, integrations, and runtime requirements.
-
-## At a glance
-
-- **Purpose:** Use the feature and scope sections below to understand the problem this project addresses.
-- **Getting started:** Follow the repository-specific setup instructions and verify commands against the current source and package scripts.
-- **Configuration:** Keep API keys, database credentials, tokens, and private user data out of commits; configure secrets locally.
-- **Quality checks:** Run the available build, test, and lint commands before submitting changes.
-
-
-
-An operations-oriented CLI or tooling project. The source code is the authority for supported commands, integrations, and runtime requirements.
-
-## Overview
-
-Good CLI tools make operational workflows repeatable and observable. This README is a starting point for documenting installation, command examples, configuration, and troubleshooting as the implementation evolves.
+- Make operational tasks repeatable from a CLI
+- Keep command behaviour and configuration understandable
+- Encourage actionable errors and safe defaults
+- Provide a base for validation, logs, and automation
 
 ## Getting started
 
 ```bash
-git clone https://github.com/saikishore2410/stacli-Opsli.git
+git clone https://github.com/kandisaikishore/stacli-Opsli.git
 cd stacli-Opsli
 ```
 
-Check the project files for the correct runtime, dependency installation, and entry-point command before executing it.
+Inspect the project manifest and source to identify prerequisites, build instructions, and supported subcommands. Keep credentials in environment variables or a secret manager, not in committed files.
 
 ## CLI quality checklist
 
-- Provide `--help` and clear usage examples
-- Validate arguments and report actionable errors
-- Keep credentials out of shell history and source control
-- Provide structured logs and safe exit codes
-- Add tests for commands and failure paths
+- Provide a help command and usage examples
+- Validate arguments and configuration
+- Return meaningful exit codes
+- Avoid printing secrets to logs
+- Test invalid, missing, and boundary inputs
+- Document installation and upgrade steps
 
-## Contributions
+## Contributing
 
-Include the command run, expected output, and actual output in bug reports.
+For bug reports, include the command used, sanitized output, expected behaviour, and environment details. Pull requests should include validation results.
 
 ## License
 
-No license is specified. Add a `LICENSE` file before allowing reuse.
+No license file is currently declared. Add a `LICENSE` file to define reuse terms.
